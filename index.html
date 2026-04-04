@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="bg"></div>
+
+    <h1>Pokédex</h1>
+
+    <div class="search-row">
+      <input id="search" type="text" placeholder="Name or ID..." />
+      <button onclick="searchPokemon()">Search</button>
+    </div>
+
+    <p class="error" id="error"></p>
+
+    <div class="card" id="card">
+      <div class="card-layout">
+        <div class="left-column">
+          <div class="num" id="num"></div>
+          <img id="artwork" src="" alt="" />
+        </div>
+        <div class="right-column">
+          <img id="sprite" src="" alt="" />
+          <div class="name" id="name"></div>
+          <div class="genus" id="genus"></div>
+          <div class="generation" id="generation"></div>
+          <div class="types" id="types"></div>
+          <div class="info-grid">
+            <div class="info-item">
+              <label>Height</label><span id="height"></span>
+            </div>
+            <div class="info-item">
+              <label>Weight</label><span id="weight"></span>
+            </div>
+            <div class="info-item">
+              <label>Abilities</label><span id="abilities"></span>
+            </div>
+            <div class="info-item">
+              <label>Capture Rate</label><span id="capture"></span>
+            </div>
+          </div>
+          <div class="desc" id="desc"></div>
+          <div class="stats">
+            <h3>BASE STATS</h3>
+            <div id="stats"></div>
+          </div>
+          <div class="cry-buttons">
+            <button
+              class="cry-btn"
+              id="cry-btn"
+              onclick="playCry()"
+              style="display: none"
+            >
+              🔊 Play Cry
+            </button>
+            <button
+              class="cry-btn legacy"
+              id="legacy-cry-btn"
+              onclick="playLegacyCry()"
+              style="display: none"
+            >
+              📻 Legacy Cry
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio id="cry-audio"></audio>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
