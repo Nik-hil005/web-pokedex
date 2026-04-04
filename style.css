@@ -310,7 +310,25 @@ h1 {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 26px;
+  }
+
+  .search-row {
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+
+  .search-row input {
+    width: 300px;
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+
+  .search-row button {
+    padding: 14px 30px;
+    font-size: 18px;
   }
 }
 
@@ -320,20 +338,24 @@ h1 {
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 28px;
     letter-spacing: 1px;
     margin-bottom: 14px;
   }
 
+  .search-row {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
   .search-row input {
-    width: 160px;
-    font-size: 13px;
-    padding: 8px 14px;
+    width: 200px;
+    font-size: 16px;
+    padding: 12px 18px;
   }
 
   .search-row button {
-    padding: 8px 16px;
-    font-size: 13px;
+    padding: 12px 22px;
+    font-size: 16px;
   }
 
   .left-column #artwork {
