@@ -58,7 +58,7 @@ async function searchPokemon() {
 
   document.getElementById("error").textContent = "";
   document.getElementById("card").classList.remove("visible");
-  let infoBlock = document.getElementsByClassName("info");
+  let infoBlock = document.getElementsByClassName("removeOnSearch");
   Array.from(infoBlock).forEach((elem) => (elem.style.display = "none"));
   
   try {

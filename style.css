@@ -75,7 +75,7 @@ h1 {
   background: #c02a0a;
 }
 
-.info{
+.info {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -90,7 +90,7 @@ h1 {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
-.info li {
+.removeOnSearch li {
   margin-left: 8px;
 }
 .search-instructions {
@@ -401,11 +401,9 @@ footer hr {
     font-size: 16px;
   }
 
-  .info{
+  .removeOnSearch {
     max-width: 350px;
   }
-
-  
 
   .left-column #artwork {
     width: 200px;
