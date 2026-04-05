@@ -58,7 +58,9 @@ async function searchPokemon() {
 
   document.getElementById("error").textContent = "";
   document.getElementById("card").classList.remove("visible");
-
+  let infoBlock = document.getElementsByClassName("info");
+  Array.from(infoBlock).forEach((elem) => (elem.style.display = "none"));
+  
   try {
     const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${query}`);
     if (!res.ok) throw new Error("Pokémon not found");
