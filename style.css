@@ -75,6 +75,31 @@ h1 {
   background: #c02a0a;
 }
 
+.info{
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  max-width: 600px;
+  font-size: 0.9rem;
+  color: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.info li {
+  margin-left: 8px;
+}
+.search-instructions {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #e3350d;
+}
+
 .card {
   position: relative;
   z-index: 1;
@@ -357,6 +382,12 @@ h1 {
     padding: 12px 22px;
     font-size: 16px;
   }
+
+  .info{
+    max-width: 350px;
+  }
+
+  
 
   .left-column #artwork {
     width: 200px;
